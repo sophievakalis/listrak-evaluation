@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+body{
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+	background-color: #FFC9CD;
+	display: flex;
+	align-items: center;
+
+}
+
+.popup_display{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 680px;
+	height: 500px;
+	position: relative;
+}
+
+.exit{
+	position: absolute;
+	width: 680px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.exit img{
+	padding: 15px;
+}
+
+.popup{
+	width: 680px;
+	height: 500px;
+	background-color: white;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 8px 20px #00000029;
+}
+
+.vl_pink{
+	height: 100%;
+	border-left:  1px solid;
+	border-image: linear-gradient(to top, #FD8C94 15%, #E9E9E9 15%, #E9E9E9 85%, #FD8C94 85%) 4;
+}
+
+.container{
+	display: flex;
+	width: 80%;
+	padding-left: 40px;
+}
+
+.header{
+	width: 38%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1{
+	text-align: left;
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	font-size: 65px;
+	letter-spacing: 13px;
+	opacity: 1;
+	color: #464646;
+	margin:0;
+}
+
+.divider{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 10%;
+}
+
+h2{
+	text-align: left;
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	font-size: 65px;
+	letter-spacing: 13px;
+	opacity: 1;
+	color: #FD8C94;
+	margin: 0;
+}
+
+.vl{
+	border-left: 1px solid #E9E9E9 ;
+  	height: 98px;
+  	margin-left: 20px;
+}
+
+.offer{
+	width: 52%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.twenty_off{
+	display: flex;
+}
+
+.twenty_off h2{
+	letter-spacing: -4.34px;
+	color: #464646;
+	font-size: 162px;
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+.percent{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+
+.symbol{
+	letter-spacing: 6.56px;
+	color: #464646;
+	font-size: 82px;
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	margin: 30px 0 0 0;
+}
+
+.off{
+	letter-spacing: 2.24px;
+	color: #464646;
+	font-size: 28px;
+	font-family: 'Prata', serif;
+	font-weight: normal;
+	margin: -30px 0 0 0;
+}
+
+.form_input{
+	display: flex;
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+form{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+input{
+	width: 100%;
+	border: none;
+	padding-bottom: 10px;
+}
+
+.email_address{
+	letter-spacing: 3px;
+	color: #464646;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	width: 60%;
+	text-align: left;
+	border-bottom: 3px solid #464646;
+
+}
+
+.signup{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 3px;
+	color: #FD8C94;
+	width: 35%;
+	border-bottom: 3px solid #FD8C94;
+}
+
+/* start of media querie */
+
+@media screen and (max-width: 800px) {
+	.popup_display{
+		width: 90%;
+		height: 546px;
+	}
+
+	.exit{
+		width: 100%;
+	}
+
+	.popup{
+		width: 100%;
+		height: 546px;
+	}
+
+	.vl_pink{
+		display: none;
+	}
+
+	.container{
+		flex-direction: column;
+		padding-left: 0px;
+		width: 90%;
+		align-items: center;
+	}
+
+	.header{
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	h1{
+		font-size: 45px;
+		letter-spacing: 9px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 59px;
+	}
+
+	.divider{
+		flex-direction: row;
+		width: 85%;
+		justify-content: center;
+
+	}
+
+	h2{
+		text-align: center;
+		margin: 0 0 0 10px;
+		
+	}
+
+	.vl{
+		border-left: none;
+		border-top: 1px solid #E9E9E9 ;
+  		width: 100%;
+  		margin-left: 0px;
+  		margin-top: 40px;
+  		align-items: flex-end;
+  		height: 0px;
+  	}
+
+  	.offer{
+  		width: 100%;
+  		justify-content: center;
+  	}
+
+  	.twenty_off{
+  		width: 90%;
+  		justify-content: center;
+  		margin: -30px 0 -40px 0;
+  	}
+
+  	.twenty_off h2{
+  		font-size: 144px;
+  	}
+
+  	.symbol{
+  		font-size: 70px;
+  	}
+
+  	.off{
+  		font-size: 23px;
+  		margin: -25px 0 0 0;
+  	}
+
+  	.form_input{
+  		flex-direction: column;
+  		margin-bottom: 0;
+  	}
+
+  	form{
+  		flex-direction: column;
+
+  	}
+
+  	input{
+  		background-color: transparent;
+  	}
+
+  	.email_address{
+  		width: 100%;
+  		text-align: center;
+  		margin-top: 20px;
+  	}
+
+  	.signup{
+  		margin-top: 20px;
+  		width: 100%;
+  		border: 1px solid #FD8C94;
+  		padding: 20px 0 20px 0
+  	}
+
+}
+
+/* end of media querie */
+
