@@ -179,7 +179,7 @@ input{
 	border-bottom: 3px solid #FD8C94;
 }
 
-/* start of media querie */
+/* start of media query */
 
 @media screen and (max-width: 800px) {
 	.popup_display{
@@ -296,5 +296,5 @@ input{
 
 }
 
-/* end of media querie */
+/* end of media query */
 
